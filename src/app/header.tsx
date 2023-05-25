@@ -13,7 +13,7 @@ export default function Header() {
     }
   ];
   return (
-    <header className="items-center relative flex">
+    <header className="items-center relative flex border-b">
       <div className="px-4.5 w-full flex max-w-4xl mx-auto py-4 items-center">
         <div className="items-center flex">
           <h1 className="items-center text-3xl">tuna2134</h1>
