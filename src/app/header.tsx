@@ -20,7 +20,7 @@ export default function Header() {
         </div>
         <nav className="flex item-center ml-auto space-mx-4">
           {Links.map((link, index) => {
-            return <Link href={link.path} className="hover:text-indigo-400 mx-4">{link.name}</Link>
+            return <Link key={index} href={link.path} className="hover:text-indigo-400 mx-4">{link.name}</Link>
           })}
         </nav>
       </div>
