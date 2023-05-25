@@ -2,6 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
+  const Links = [
+    {
+      name: "Blog",
+      path: "/blog",
+    },
+    {
+      name: "Work",
+      path: "/work",
+    }
+  ];
   return (
     <header className="items-center relative flex">
       <div className="px-4.5 w-full flex max-w-4xl mx-auto py-4 items-center">
@@ -9,8 +19,9 @@ export default function Header() {
           <h1 className="items-center text-3xl">tuna2134</h1>
         </div>
         <nav className="flex item-center ml-auto space-mx-4">
-          <Link href="/blog" className="hover:text-indigo-400">Blog</Link>
-          <Link href="/work" className="hover:text-indigo-400">Work</Link>
+          {Links.map((link, index) => {
+            return <Link href={link.path} className="hover:text-indigo-400 mx-4">{link.name}</Link>
+          })}
         </nav>
       </div>
     </header>
