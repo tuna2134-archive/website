@@ -13,7 +13,7 @@ export default function Header() {
     }
   ];
   return (
-    <header className="items-center flex border-b sticky top-0 z-50">
+    <header className="flex border-b sticky top-0 z-50 bg-white">
       <div className="px-3 sm:px-4.5 w-full flex max-w-4xl mx-auto py-4 items-center">
         <div className="flex mx-auto sm:mx-0">
           <Link href="/">
