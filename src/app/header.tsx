@@ -16,7 +16,9 @@ export default function Header() {
     <header className="items-center relative flex border-b">
       <div className="px-4.5 w-full flex max-w-4xl mx-auto py-4 items-center">
         <div className="items-center flex">
-          <h1 className="items-center text-3xl">tuna2134</h1>
+          <Link href="/">
+            <h1 className="items-center text-3xl">tuna2134</h1>
+          </Link>
         </div>
         <nav className="flex item-center ml-auto space-mx-4">
           {Links.map((link, index) => {
