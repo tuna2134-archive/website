@@ -20,7 +20,7 @@ export default function Header() {
             <h1 className="text-3xl font-bold">tuna2134</h1>
           </Link>
         </div>
-        <nav className="hidden sm:flex item-center ml-auto space-mx-4">
+        <nav className="hidden sm:flex ml-auto space-mx-4">
           {Links.map((link, index) => {
             return <Link key={index} href={link.path} className="hover:text-indigo-400 mx-4">{link.name}</Link>
           })}
