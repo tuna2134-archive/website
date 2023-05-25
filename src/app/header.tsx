@@ -8,8 +8,9 @@ export default function Header() {
         <div className="items-center flex">
           <h1 className="items-center text-3xl">tuna2134</h1>
         </div>
-        <nav className="flex item-center ml-auto">
+        <nav className="flex item-center ml-auto space-mx-4">
           <Link href="/blog" className="hover:text-indigo-400">Blog</Link>
+          <Link href="/work" className="hover:text-indigo-400">Work</Link>
         </nav>
       </div>
     </header>
