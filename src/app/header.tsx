@@ -17,7 +17,7 @@ export default function Header() {
       <div className="px-4.5 w-full flex max-w-4xl mx-auto py-4 items-center">
         <div className="items-center flex">
           <Link href="/">
-            <h1 className="items-center text-3xl">tuna2134</h1>
+            <h1 className="text-3xl font-bold">tuna2134</h1>
           </Link>
         </div>
         <nav className="flex item-center ml-auto space-mx-4">
