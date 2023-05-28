@@ -8,6 +8,7 @@ COPY pnpm-lock.yaml package.json .
 RUN pnpm install --frozen-lockfile
 
 COPY . .
+ENV BUILD_TYPE standalone
 RUN pnpm build
 
 FROM node:18-slim
