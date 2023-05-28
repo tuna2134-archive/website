@@ -23,8 +23,6 @@ export async function generateStaticParams() {
   const blogs = await getBlogs();
   console.log(blogs);
   return blogs.map((blog) => ({
-    params: {
-      slug: blog.id,
-    }
+    slug: blog.id,
   }));
 }
