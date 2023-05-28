@@ -13,7 +13,7 @@ export default function BlogComponent({
       {blogs.map((blog: Blog, index: number) => {
         return (
           <div key={index} className="pt-3 py-4">
-            <Link className="text-xl font-semibold" href={`/blog/${blog.id}`}>{blog.metadata.title}</Link>
+            <Link className="text-xl font-semibold hover:text-indigo-400" href={`/blog/${blog.id}`}>{blog.metadata.title}</Link>
             <div className="pt-6">
               <span>{blog.metadata.date}</span>
             </div>

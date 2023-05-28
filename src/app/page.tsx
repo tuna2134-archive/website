@@ -3,7 +3,7 @@ import BlogComponent from './_components/blogs';
 import Link from 'next/link';
 
 export default async function Home() {
-  const blogs = (await getBlogs()).slice(0, 10);
+  const blogs = (await getBlogs()).slice(0, 8);
   return (
     <main>
       <div className="w-full bg-gradient-to-r from-indigo-600 to-blue-400">

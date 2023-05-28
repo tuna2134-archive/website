@@ -14,7 +14,7 @@ export default async function Page({ params }: {
       </div>
       <article dangerouslySetInnerHTML={{
         __html: blog.content
-      }} className="prose znc pt-4"></article>
+      }} className="prose prose-code:p-0 znc pt-4"></article>
     </div>
   )
 };
