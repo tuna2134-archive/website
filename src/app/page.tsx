@@ -18,7 +18,7 @@ export default async function Home() {
         <div className="pt-3 grid grid-cols-2">
           {blogs.map((blog: Blog, index: number) => {
             return (
-              <div key={index} className="pt-3 py-2">
+              <div key={index} className="pt-3 py-4">
                 <Link className="text-xl font-bold" href={`/blog/${blog.id}`}>{blog.metadata.title}</Link>
                 <div className="pt-6">
                   <span>{blog.metadata.date}</span>
