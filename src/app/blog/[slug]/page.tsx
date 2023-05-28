@@ -8,7 +8,7 @@ export default async function Page({ params }: {
 }) {
   const blog = await getBlog(params.slug);
   return (
-    <div className="pt-4 w-full max-w-4xl mx-auto">
+    <div className="pt-4 w-full max-w-4xl mx-auto justify-center">
       <div>
         <h1 className="text-3xl text-center font-bold">{blog.metadata.title}</h1>
       </div>
