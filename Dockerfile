@@ -4,7 +4,7 @@ FROM node:18 AS builder
 WORKDIR /builder
 
 RUN curl -fsSL https://get.pnpm.io/install.sh | sh -
-COPY pnpm-local.yaml package.json .
+COPY pnpm-lock.yaml package.json .
 RUN pnpm install --frozen-lockfile
 
 COPY . .
