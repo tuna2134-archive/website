@@ -2,7 +2,7 @@ import { getBlogs, Blog } from './blog/_blogs'
 import Link from 'next/link';
 
 export default async function Home() {
-  const blogs = await getBlogs();
+  const blogs = (await getBlogs()).slice(0, 10);
   return (
     <main>
       <div className="w-full bg-gradient-to-r from-indigo-600 to-blue-400">
