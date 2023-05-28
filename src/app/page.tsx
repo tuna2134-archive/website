@@ -1,4 +1,5 @@
-import { getBlogs, Blog } from './blog/_blogs'
+import { getBlogs } from './blog/_blogs'
+import BlogComponent from './_components/blogs';
 import Link from 'next/link';
 
 export default async function Home() {
@@ -13,21 +14,7 @@ export default async function Home() {
           </p>
         </div>
       </div>
-      <div className="w-full max-w-xl mx-auto pt-7">
-        <h2 className="text-3xl text-center font-semibold">ブログ</h2>
-        <div className="pt-3 grid grid-cols-2">
-          {blogs.map((blog: Blog, index: number) => {
-            return (
-              <div key={index} className="pt-3 py-4">
-                <Link className="text-xl font-bold" href={`/blog/${blog.id}`}>{blog.metadata.title}</Link>
-                <div className="pt-6">
-                  <span>{blog.metadata.date}</span>
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
+      <BlogComponent blogs={blogs} />
     </main>
   )
 }

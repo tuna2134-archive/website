@@ -26,6 +26,13 @@ export async function getBlogs(): Promise<Blog[]> {
       id: file.replace(".md", "")
     }
   }));
+  blogs.sort((a, b) => {
+    if (a.metadata.date > b.metadata.date) {
+      return -1;
+    } else {
+      return 1;
+    }
+  });
   return blogs;
 };
 
