@@ -21,7 +21,6 @@ export default async function Page({ params }: {
 
 export async function generateStaticParams() {
   const blogs = await getBlogs();
-  console.log(blogs);
   return blogs.map((blog) => ({
     slug: blog.id,
   }));
