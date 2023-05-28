@@ -8,13 +8,13 @@ export default async function Page({ params }: {
 }) {
   const blog = await getBlog(params.slug);
   return (
-    <div className="pt-4 w-full max-w-4xl mx-auto justify-center">
+    <div className="pt-4 w-full max-w-4xl mx-auto">
       <div>
         <h1 className="text-3xl text-center font-bold">{blog.metadata.title}</h1>
       </div>
       <article dangerouslySetInnerHTML={{
         __html: blog.content
-      }} className="prose prose-code:p-0 znc pt-4"></article>
+      }} className="prose prose-code:p-0 znc pt-4 justify-center"></article>
     </div>
   )
 };
