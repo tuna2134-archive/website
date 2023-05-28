@@ -3,11 +3,12 @@ FROM node:18 AS builder
 
 WORKDIR /builder
 
-COPY yarn.lock package.json .
-RUN yarn install --frozen-lockfile
+RUN curl -fsSL https://get.pnpm.io/install.sh | sh -
+COPY pnpm-local.yaml package.json .
+RUN pnpm install --frozen-lockfile
 
 COPY . .
-RUN yarn build
+RUN pnpm build
 
 FROM node:18-slim
 
