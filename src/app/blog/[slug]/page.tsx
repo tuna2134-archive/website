@@ -14,7 +14,7 @@ export default async function Page({ params }: {
       </div>
       <article dangerouslySetInnerHTML={{
         __html: blog.content
-      }} className="w-full prose prose-code:p-0 znc pt-4 justify-center"></article>
+      }} className="w-full prose prose-code:p-0 znc pt-4 px-auto"></article>
     </div>
   )
 };
