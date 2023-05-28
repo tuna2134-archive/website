@@ -16,9 +16,9 @@ export interface Blog {
 };
 
 export async function getBlogs(): Promise<Blog[]> {
-  const files = await fs.readdir("src/blogs");
+  const files = await fs.readdir("blogs");
   const blogs = await Promise.all(files.map(async (file: string) => {
-    const Mdcontent = await fs.readFile(`src/blogs/${file}`, "utf-8");
+    const Mdcontent = await fs.readFile(`blogs/${file}`, "utf-8");
     const { content, data } = matter(Mdcontent);
     return {
       metadata: data as Metadata,
@@ -30,7 +30,7 @@ export async function getBlogs(): Promise<Blog[]> {
 };
 
 export async function getBlog(id: string): Promise<Blog> {
-  const Mdcontent = await fs.readFile(`src/blogs/${id}.md`, "utf-8");
+  const Mdcontent = await fs.readFile(`blogs/${id}.md`, "utf-8");
   const { content, data } = matter(Mdcontent);
   return {
     metadata: data as Metadata,

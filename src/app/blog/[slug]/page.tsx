@@ -1,12 +1,12 @@
-import { getBlogs, getBlog } from "../_blogs";
+import { getBlogs, getBlog, Blog } from "../_blogs";
 import "zenn-content-css";
 
 export default async function Page({ params }: {
   params: {
-    id: string
+    slug: string,
   }
 }) {
-  const blog = await getBlog(params.id);
+  const blog = await getBlog(params.slug);
   return (
     <div className="pt-4 w-full max-w-4xl mx-auto">
       <div>
@@ -21,11 +21,10 @@ export default async function Page({ params }: {
 
 export async function generateStaticParams() {
   const blogs = await getBlogs();
-  return blogs.map((blog) => {
-    return {
-      params: {
-        id: blog.id
-      }
+  console.log(blogs);
+  return blogs.map((blog) => ({
+    params: {
+      slug: blog.id,
     }
-  });
+  }));
 }
