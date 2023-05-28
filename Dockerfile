@@ -3,7 +3,7 @@ FROM node:18 AS builder
 
 WORKDIR /builder
 
-RUN curl -fsSL https://get.pnpm.io/install.sh | sh -
+RUN bash -c "curl -fsSL https://get.pnpm.io/install.sh | sh -"
 COPY pnpm-lock.yaml package.json .
 RUN pnpm install --frozen-lockfile
 
