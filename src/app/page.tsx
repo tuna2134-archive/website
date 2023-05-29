@@ -14,7 +14,9 @@ export default async function Home() {
           </p>
         </div>
       </div>
-      <BlogComponent blogs={blogs} />
+      <div className="py-4">
+        <BlogComponent blogs={blogs} />
+      </div>
     </main>
   )
 }
