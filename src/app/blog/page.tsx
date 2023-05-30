@@ -1,7 +1,7 @@
 import { getBlogs } from "./_blogs";
 import BlogComponent from "../_components/blogs";
 
-export metadata = {
+export const metadata = {
   title: "blog | tuna2134",
   description: "ブログ一覧",
 };
