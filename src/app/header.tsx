@@ -10,6 +10,10 @@ export default function Header() {
     {
       name: "Work",
       path: "/works",
+    },
+    {
+      name: "Tools",
+      path: "https://tools.tuna2134.jp",
     }
   ];
   return (
