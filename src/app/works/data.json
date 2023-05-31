@@ -1,0 +1,32 @@
+[
+    {
+        "name": "voicevox-client",
+        "url": "https://github.com/voicevox-client",
+        "description": "Voicevoxのクライアントライブラリー"
+    },
+    {
+        "name": "google-custom-search",
+        "url": "https://github.com/mc-fdc-dev/google-custom-search",
+        "description": "Googleカスタム検索API用のラッパー"
+    },
+    {
+        "name": "mizu",
+        "url": "https://pypi.org/project/mizu/",
+        "description": "RustでかかれたPython向けのマークダウンパーサー"
+    },
+    {
+        "name": "aquestalk-rs",
+        "url": "https://github.com/KuronekoServer/aquestalk-rs.git",
+        "description": "AquesTalkのラッパー"
+    },
+    {
+        "name": "shorten",
+        "url": "https://github.com/mc-fdc-dev/shorten.git",
+        "description": "Rustで書かれているURL短縮"
+    },
+    {
+        "name": "webhook-and-embed",
+        "url": "https://tuna2134.dev/webhook-and-embed/",
+        "description": "DiscordのWebhookを使ってEmbedを送信することが可能なサイト"
+    }
+]

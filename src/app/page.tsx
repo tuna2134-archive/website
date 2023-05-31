@@ -1,5 +1,6 @@
 import { getBlogs } from './blog/_blogs'
 import BlogComponent from './_components/blogs';
+import { Work } from './works/work';
 import Link from 'next/link';
 
 export default async function Home() {
@@ -16,6 +17,9 @@ export default async function Home() {
       </div>
       <div className="py-4">
         <BlogComponent blogs={blogs} />
+      </div>
+      <div className="py-4">
+        <Work />
       </div>
     </main>
   )
