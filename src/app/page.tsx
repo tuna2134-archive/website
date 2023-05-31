@@ -19,7 +19,7 @@ export default async function Home() {
         <BlogComponent blogs={blogs} />
       </div>
       <div className="py-4">
-        <Work />
+        <Work count={8} />
       </div>
     </main>
   )
