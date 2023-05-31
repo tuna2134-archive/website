@@ -9,7 +9,7 @@ export default function Header() {
     },
     {
       name: "Work",
-      path: "/work",
+      path: "/works",
     }
   ];
   return (
