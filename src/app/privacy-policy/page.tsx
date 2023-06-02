@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <div className="w-full max-w-4 mx-auto px-3 prose">
+    <div className="w-full max-w-4 mx-auto p-3 prose">
       <h2>プライバシーポリシー</h2>
       <div>
         <h3>個人情報の利用目的について</h3>
