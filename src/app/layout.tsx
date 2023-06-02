@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <Head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8715826596324259" crossorigin="anonymous"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8715826596324259" crossOrigin="anonymous"></script>
       </Head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <div className="flex-grow">
