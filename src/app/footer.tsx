@@ -9,7 +9,6 @@ export default function Footer() {
         </div>
         <div className="flex ml-auto space-x-3">
           <Link href="/privacy-policy">Private Policy</Link>
-          <Link href="/terms-of-service">Terms of Service</Link>
         </div>
       </div>
     </footer>
