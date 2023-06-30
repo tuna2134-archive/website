@@ -11,35 +11,4 @@ CloudFlare puppeteerがベータ版としてリリースされたので、使っ
 
 [CloudFlare公式サーバー](https://discord.gg/cloudflaredev)
 
-## サンプルコード
-```ts
-import puppeteer from "@cloudflare/puppeteer";
-
-export default {
-    async fetch(request: Request, env: Env): Promise<Response> {
-
-
-		    const { searchParams } = new URL(request.url);
-		    let url = searchParams.get('url');
-		    if (!url) {
-			      return new Response("Invalid url");
-		    };
-		    const page = await browser.newPage();
-	      await page.setViewport({
-	          width: 1920,
-	          height: 1080,
-	          deviceScaleFactor: 1,
-	      });
-        await page.goto(url, {
-	          waitUntil: "networkidle2",
-	      });
-        const screenshot = await page.screenshot() as Buffer;
-	      await browser.close();
-        return new Response(screenshot.buffer, {
-            headers: {
-                "content-type": "image/png"
-            }
-        });
-    },
-};
-```
+## 
